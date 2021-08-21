@@ -1,0 +1,45 @@
+.quote {
+    padding: 43px 0 46px;
+    &__inner {
+        position: relative;
+        display: flex;
+        &::before {
+            content: '“';
+            position: absolute;
+            top: -42px;
+            left: 63px;
+            font-weight: bold;
+            font-size: 120px;
+            line-height: 146px;
+            color: #2C2C2C;
+        }
+    }
+    &__texts {
+        flex: 1 1 auto;
+        padding: 76px 71px 57px 64px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+        border-radius: 10px 0 0 10px;
+    }
+    &__img {
+        flex: 0 0 310px;
+        position: relative;
+        background-color: #FEDA1F;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 0 10px 10px 0;
+        img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__title {
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+    &__text {
+        color: #9F9F9F;
+    }
+}

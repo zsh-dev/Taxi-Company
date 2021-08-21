@@ -1,0 +1,36 @@
+@import 'base/mixins';
+@import 'base/variables';
+@import 'libs/minireset.min';
+@import 'libs/swiper-bundle.min.scss';
+
+
+
+
+
+@import 'settings';
+
+@import 'components';
+
+@import 'blocks/header';
+
+@import 'blocks/transfer';
+
+@import 'blocks/reasons';
+
+@import 'blocks/quote';
+
+@import 'blocks/taxi';
+
+@import 'blocks/direction';
+
+@import 'blocks/numbers';
+
+@import 'blocks/feedback';
+
+@import 'blocks/question';
+
+@import 'blocks/support';
+
+@import 'blocks/footer';
+
+@import 'media';

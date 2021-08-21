@@ -1,0 +1,44 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 100px;
+    }
+    &__list {
+        display: flex;
+        &-item {
+            margin-right: 20px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    &__contacts{
+        display: flex;
+        align-items: center;
+    }
+    &__phone {
+        margin-right: 30px;
+        
+    }
+    &__socials {
+        &-link {
+            display: block;
+            transition: .5s;
+            margin-bottom: 9px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
