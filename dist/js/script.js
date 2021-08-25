@@ -46,11 +46,11 @@ btnSpoiler.forEach((item) => {
 
 
 const btnBurger = document.querySelector('.burger'),
-  menuList = document.querySelector('.header__list');
+  menu = document.querySelector('.header__menu');
 
 btnBurger.addEventListener('click', () => {
   btnBurger.classList.toggle('active');
-  menuList.classList.toggle('active');
+  menu.classList.toggle('active');
   document.body.classList.toggle('lock');
 })
 
@@ -63,7 +63,7 @@ for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {
         e.preventDefault();
         btnBurger.classList.remove('active');
-        menuList.classList.remove('active');
+        menu.classList.remove('active');
         document.body.classList.remove('lock');
         const id = smoothLink.getAttribute('href');
         document.querySelector(id).scrollIntoView({

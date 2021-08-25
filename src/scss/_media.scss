@@ -15,24 +15,20 @@
         &__inner {
             padding: 30px 20px;
         }
-        &__input {
-            width: 172px;
-            margin-right: 15px;
-        }
-
-      
     }
 
 
 }
 
 @media (max-width: 991px) {
-    .header__menu {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        order: 3;
-        margin: 0 auto;
+    .header {
+        &__menu {
+            width: 100%;
+            order: 3;
+        }
+        &__list {
+            justify-content: center;
+        }
     }
 
     .title_size_80 {
@@ -65,6 +61,9 @@
 
         &__car-data {
             flex-basis: 260px;
+            .btn {
+                width: 100%;
+            }
         }
 
         &__item_large {
@@ -151,7 +150,7 @@
 
         &__inner {
             flex-direction: column;
-            align-items: stretch;
+            align-items: center;
         }
 
         &__text {
@@ -169,11 +168,6 @@
         &__subtitle {
             max-width: 390px;
         }
-
-        &__input {
-            width: 25%;
-            margin-right: 30px;
-        }
     }
 
     .footer {
@@ -181,7 +175,7 @@
             flex-basis: 33.333%;
             margin-bottom: 20px;
         }
-     
+
     }
 }
 
@@ -268,27 +262,51 @@
         margin-bottom: 25px;
         text-align: center;
     }
+
     .support {
         &__btn {
             min-width: 215px;
         }
-          &__input {
-        width: 25%;
-        margin-right: 10px;
-    }
     }
 
     .footer {
         &__block {
             flex-basis: 50%;
         }
-     
-}
+
+    }
 
 
 }
 
 @media (max-width: 575px) {
+    .burger {
+        display: block;
+        z-index: 10;
+
+
+
+    }
+
+    .title {
+        font-size: 25px;
+        line-height: 29px;
+
+        &_size_16 {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    .btn {
+        min-width: auto;
+        padding: 0 55px;
+
+        &_small {
+            padding: 0 22px;
+        }
+    }
+    
     .header {
         top: 24px;
 
@@ -298,24 +316,28 @@
             min-height: 122px;
         }
 
-        &__list {
+        &__menu {
             position: fixed;
             top: 0;
             right: -150%;
             width: 100vw;
             height: 100vh;
-            background: #000;
+            background-color: #000;
             z-index: 9;
-            flex-direction: column;
             overflow-y: scroll;
-            justify-content: center;
-            align-items: center;
-            transition: .5s;
+            transition: right .5s;
 
             &.active {
                 right: 0;
             }
 
+            
+        }
+        &__list {
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             &-item {
                 margin-right: 0;
                 margin-bottom: 20px;
@@ -332,31 +354,7 @@
         }
     }
 
-    .burger {
-        display: block;
-        z-index: 10;
-
-
-
-    }
-
-    .title {
-        font-size: 20px;
-        line-height: 24px;
-
-        &_size_16 {
-            font-size: 14px;
-            line-height: 17px;
-        }
-    }
-
-    .btn {
-        padding: 0 55px;
-
-        &_small {
-            padding: 0 22px;
-        }
-    }
+    
 
     .transfer {
         padding: 160px 0 25px;
@@ -396,6 +394,9 @@
     }
 
     .form {
+        &__car-data {
+            
+        }
         &__item_large {
             width: 100%;
             margin-right: 0;
@@ -419,6 +420,7 @@
         padding: 25px 0 11px;
 
         &__title {
+            font-size: 23px;
             margin-bottom: 30px;
         }
 
@@ -581,9 +583,10 @@
         }
 
         &__subtitle {
-            font-size: 12px;
-            line-height: 15px;
+            font-size: 14px;
+            line-height: 17px;
         }
+
         &__form {
             flex-wrap: wrap;
         }
@@ -602,19 +605,21 @@
     .footer {
         padding: 37px 0;
 
-   
-            &__block {
-                text-align: center;
-                flex-basis: 100%;
-            
-         
-    }
+
+        &__block {
+            text-align: center;
+            flex-basis: 100%;
+
+
+        }
+
         &__socials {
             text-align: center;
         }
+
         &__copyright {
             margin: 13px auto 0;
         }
-        
+
     }
 }
