@@ -35,15 +35,28 @@ const mobileSlider = new Swiper('.mobile-slider', {
 });
 
 
-const btnSpoiler = document.querySelectorAll('.questions__question');
+function accordeonTrigger(selectors) {
+  const items = document.querySelectorAll(selectors);
+  items.forEach((item) => {
+    const itemParent = item.parentNode,
+      itemSibling = item.nextSibling;
 
-btnSpoiler.forEach((item) => {
-  item.addEventListener('click', (e) => {
-    e.target.classList.toggle('active');
-    e.target.nextSibling.classList.toggle('active');
+    if (itemParent.classList.contains('active')) {
+      itemSibling.style.maxHeight = itemSibling.scrollHeight + 'px';
+    }
+    item.addEventListener('click', () => {
+
+      itemParent.classList.toggle('active');
+      if (itemParent.classList.contains('active')) {
+        itemSibling.style.maxHeight = itemSibling.scrollHeight + 'px';
+      } else {
+        itemSibling.style.maxHeight = null;
+      }
+
+    })
   })
-})
-
+}
+accordeonTrigger('.questions__question');
 
 const btnBurger = document.querySelector('.burger'),
   menu = document.querySelector('.header__menu');

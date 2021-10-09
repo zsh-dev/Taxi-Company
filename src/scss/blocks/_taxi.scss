@@ -13,84 +13,11 @@
         column-gap: 5px;
     }
 
-    &__card {
-        text-align: center;
-        &-title {
-            color: #2C2C2C;
-            margin-bottom: 15px;
-        }
-        
-    }
-
-    &__img {
-        position: relative;
-        margin-bottom: 40px;
-        &::before {
-            content: '';
-            opacity: 0;
-            position: absolute;
-            top: -22px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 169px;
-            height: 169px;
-            border-radius: 50%;
-            background: #FEDA1F;
-            z-index: -1;
-            transition:opacity .5s ease-in;
-        }
-        &:hover {
-            &::before {
-                opacity: 1;
-            }
-        }
-    }
-
-   
-
-    &__info {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    &__descr {
-        position: relative;
-        font-weight: 600;
-        color: #9F9F9F;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        &_person {
-            padding-left: 20px;
-            margin-right: 15px;
-
-            &::before {
-                background-image: url(../icons/person.svg);
-                width: 15px;
-                height: 15px;
-            }
-        }
-
-        &_case {
-            padding-left: 25px;
-
-            &::before {
-                background-image: url(../icons/case.svg);
-                width: 20px;
-                height: 15px;
-            }
-
-        }
-    }
-
 }
+
+
+
+
 
 .mobile-slider {
     display: none;

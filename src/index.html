@@ -6,6 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
@@ -57,32 +74,32 @@
                     <p class="transfer__item-text">Трансфер из аэропорта в любую точку Крыма</p>
                 </div>
             </div>
-            <div class="transfer__box">
-                <div class="transfer__box-text">
-                    <h2 class="title transfer__box-title title_size_20">Заказать <span class="title_yellow">такси</span>
-                    </h2>
-                    <p class="transfer__box-subtitle">Заполните форму, чтобы заказать такси</p>
-                </div>
-                <form action="#" class="form">
-                    <div class="form__user-data">
-                        <input type="text" name="name" placeholder="Имя" class="form__item">
-                        <input type="text" name="number" placeholder="Телефон" class="form__item">
-                        <textarea name="comment" class="form__item form__textarea" placeholder="Комментарий"></textarea>
-                    </div>
-                    <div class="form__car-data">
-                        <input type="text" name="date" class="form__item form__item_large"
-                            placeholder="Дата заказа такси">
-                        <input type="text" name="time" class="form__item form__item_small" placeholder="Время">
-                        <input type="text" name="from" class="form__item form__item_medium" placeholder="Откуда">
-                        <input type="text" name="where" class="form__item form__item_medium" placeholder="Куда">
-                        <select name="class" class="form__item form__select">
-                            <option selected disabled class="white">Класс автомобиля</option>
-                        </select>
-                        <button class="btn" type="submit">Заказать такси</button>
-                    </div>
-                </form>
-            </div>
         </div>
+        <div class="order-box">
+            <div class="order-box__text">
+                <h2 class="title order-box__title title_size_20">Заказать <span class="title_yellow">такси</span>
+                </h2>
+                <p class="order-box__subtitle">Заполните форму, чтобы заказать такси</p>
+            </div>
+            <form action="#" class="form">
+                <div class="form__user-data">
+                    <input type="text" name="name" placeholder="Имя" class="form__item">
+                    <input type="text" name="number" placeholder="Телефон" class="form__item">
+                    <textarea name="comment" class="form__item form__textarea" placeholder="Комментарий"></textarea>
+                </div>
+                <div class="form__car-data">
+                    <input type="text" name="date" class="form__item form__item_large" placeholder="Дата заказа такси">
+                    <input type="text" name="time" class="form__item form__item_small" placeholder="Время">
+                    <input type="text" name="from" class="form__item form__item_medium" placeholder="Откуда">
+                    <input type="text" name="where" class="form__item form__item_medium" placeholder="Куда">
+                    <select name="class" class="form__item form__select">
+                        <option selected disabled class="white">Класс автомобиля</option>
+                    </select>
+                    <button class="btn" type="submit">Заказать такси</button>
+                </div>
+            </form>
+        </div>
+
     </section>
     <section class="reasons">
         <div class="container">
@@ -176,93 +193,94 @@
                 Выберите <span class="title_yellow">класс такси</span>
             </h2>
             <ul class="taxi__cards">
-                <li class="taxi__card">
-                    <div class="taxi__img"><img src="img/car.png" alt=""></div>
-                    <h3 class="title taxi__card-title title_size_16">Эконом</h3>
-                    <div class="taxi__info">
-                        <p class="taxi__descr taxi__descr_person">3 Персоны</p>
-                        <p class="taxi__descr taxi__descr_case">2 Чемодана</p>
+                <li class="taxi-card">
+                    <div class="taxi-card__img"><img src="img/car.png" alt="Такси"></div>
+                    <h3 class="title taxi-card__title title_size_16">Эконом</h3>
+                    <div class="taxi-card__info">
+                        <p class="taxi-card__descr taxi-card__descr_person">3 Персоны</p>
+                        <p class="taxi-card__descr taxi-card__descr_case">2 Чемодана</p>
                     </div>
-                    <button class="btn taxi__btn">Забронировать</button>
+                    <button class="btn taxi-card__btn">Забронировать</button>
                 </li>
-                <li class="taxi__card">
-                    <div class="taxi__img"><img src="img/car.png" alt=""></div>
-                    <h3 class="title taxi__card-title title_size_16">Эконом</h3>
-                    <div class="taxi__info">
-                        <p class="taxi__descr taxi__descr_person">3 Персоны</p>
-                        <p class="taxi__descr taxi__descr_case">2 Чемодана</p>
+                <li class="taxi-card">
+                    <div class="taxi-card__img"><img src="img/car.png" alt="Такси"></div>
+                    <h3 class="title taxi-card__title title_size_16">Эконом</h3>
+                    <div class="taxi-card__info">
+                        <p class="taxi-card__descr taxi-card__descr_person">3 Персоны</p>
+                        <p class="taxi-card__descr taxi-card__descr_case">2 Чемодана</p>
                     </div>
-                    <button class="btn taxi__btn">Забронировать</button>
+                    <button class="btn taxi-card__btn">Забронировать</button>
                 </li>
-                <li class="taxi__card">
-                    <div class="taxi__img"><img src="img/car.png" alt=""></div>
-                    <h3 class="title taxi__card-title title_size_16">Эконом</h3>
-                    <div class="taxi__info">
-                        <p class="taxi__descr taxi__descr_person">3 Персоны</p>
-                        <p class="taxi__descr taxi__descr_case">2 Чемодана</p>
+                <li class="taxi-card">
+                    <div class="taxi-card__img"><img src="img/car.png" alt="Такси"></div>
+                    <h3 class="title taxi-card__title title_size_16">Эконом</h3>
+                    <div class="taxi-card__info">
+                        <p class="taxi-card__descr taxi-card__descr_person">3 Персоны</p>
+                        <p class="taxi-card__descr taxi-card__descr_case">2 Чемодана</p>
                     </div>
-                    <button class="btn taxi__btn">Забронировать</button>
+                    <button class="btn taxi-card__btn">Забронировать</button>
                 </li>
-                <li class="taxi__card">
-                    <div class="taxi__img"><img src="img/car.png" alt=""></div>
-                    <h3 class="title taxi__card-title title_size_16">Эконом</h3>
-                    <div class="taxi__info">
-                        <p class="taxi__descr taxi__descr_person">3 Персоны</p>
-                        <p class="taxi__descr taxi__descr_case">2 Чемодана</p>
+                <li class="taxi-card">
+                    <div class="taxi-card__img"><img src="img/car.png" alt="Такси"></div>
+                    <h3 class="title taxi-card__title title_size_16">Эконом</h3>
+                    <div class="taxi-card__info">
+                        <p class="taxi-card__descr taxi-card__descr_person">3 Персоны</p>
+                        <p class="taxi-card__descr taxi-card__descr_case">2 Чемодана</p>
                     </div>
-                    <button class="btn taxi__btn">Забронировать</button>
+                    <button class="btn taxi-card__btn">Забронировать</button>
                 </li>
             </ul>
             <div class="swiper-container mobile-slider">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper mobile-slider__wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide taxi__card">
-                        <div class="taxi__img"><img src="img/car.png" alt=""></div>
-                        <h3 class="title taxi__card-title title_size_16">Эконом</h3>
-                        <div class="taxi__info">
-                            <p class="taxi__descr taxi__descr_person">3 Персоны</p>
-                            <p class="taxi__descr taxi__descr_case">2 Чемодана</p>
+                    <div class="swiper-slide taxi-card">
+                        <div class="taxi-card__img"><img src="img/car.png" alt="Такси"></div>
+                        <h3 class="title taxi-card__title title_size_16">Эконом</h3>
+                        <div class="taxi-card__info">
+                            <p class="taxi-card__descr taxi-card__descr_person">3 Персоны</p>
+                            <p class="taxi-card__descr taxi-card__descr_case">2 Чемодана</p>
                         </div>
-                        <button class="btn taxi__btn">Забронировать</button>
+                        <button class="btn taxi-card__btn">Забронировать</button>
                     </div>
-                    <div class="swiper-slide taxi__card">
-                        <div class="taxi__img"><img src="img/car.png" alt=""></div>
-                        <h3 class="title taxi__card-title title_size_16">Эконом</h3>
-                        <div class="taxi__info">
-                            <p class="taxi__descr taxi__descr_person">3 Персоны</p>
-                            <p class="taxi__descr taxi__descr_case">2 Чемодана</p>
+                    <div class="swiper-slide taxi-card">
+                        <div class="taxi-card__img"><img src="img/car.png" alt="Такси"></div>
+                        <h3 class="title taxi-card__title title_size_16">Эконом</h3>
+                        <div class="taxi-card__info">
+                            <p class="taxi-card__descr taxi-card__descr_person">3 Персоны</p>
+                            <p class="taxi-card__descr taxi-card__descr_case">2 Чемодана</p>
                         </div>
-                        <button class="btn taxi__btn">Забронировать</button>
+                        <button class="btn taxi-card__btn">Забронировать</button>
                     </div>
-                    <div class="swiper-slide taxi__card">
-                        <div class="taxi__img"><img src="img/car.png" alt=""></div>
-                        <h3 class="title taxi__card-title title_size_16">Эконом</h3>
-                        <div class="taxi__info">
-                            <p class="taxi__descr taxi__descr_person">3 Персоны</p>
-                            <p class="taxi__descr taxi__descr_case">2 Чемодана</p>
+                    <div class="swiper-slide taxi-card">
+                        <div class="taxi-card__img"><img src="img/car.png" alt="Такси"></div>
+                        <h3 class="title taxi-card__title title_size_16">Эконом</h3>
+                        <div class="taxi-card__info">
+                            <p class="taxi-card__descr taxi-card__descr_person">3 Персоны</p>
+                            <p class="taxi-card__descr taxi-card__descr_case">2 Чемодана</p>
                         </div>
-                        <button class="btn taxi__btn">Забронировать</button>
+                        <button class="btn taxi-card__btn">Забронировать</button>
                     </div>
-                    <div class="swiper-slide taxi__card">
-                        <div class="taxi__img"><img src="img/car.png" alt=""></div>
-                        <h3 class="title taxi__card-title title_size_16">Эконом</h3>
-                        <div class="taxi__info">
-                            <p class="taxi__descr taxi__descr_person">3 Персоны</p>
-                            <p class="taxi__descr taxi__descr_case">2 Чемодана</p>
+                    <div class="swiper-slide taxi-card">
+                        <div class="taxi-card__img"><img src="img/car.png" alt="Такси"></div>
+                        <h3 class="title taxi-card__title title_size_16">Эконом</h3>
+                        <div class="taxi-card__info">
+                            <p class="taxi-card__descr taxi-card__descr_person">3 Персоны</p>
+                            <p class="taxi-card__descr taxi-card__descr_case">2 Чемодана</p>
                         </div>
-                        <button class="btn taxi__btn">Забронировать</button>
+                        <button class="btn taxi-card__btn">Забронировать</button>
                     </div>
-                    ...
                 </div>
                 <!-- If we need pagination -->
                 <div class="slider-pagination"></div>
 
                 <!-- If we need navigation buttons -->
-                
-                <button class="mobile-slider__btn mobile-slider__btn_prev"><img src="icons/btn-prev.svg" alt=""></button>
-                <button class="mobile-slider__btn mobile-slider__btn_next"><img src="icons/btn-next.svg" alt=""></button>
-            
+
+                <button class="mobile-slider__btn mobile-slider__btn_prev"><img src="icons/btn-prev.svg"
+                        alt=""></button>
+                <button class="mobile-slider__btn mobile-slider__btn_next"><img src="icons/btn-next.svg"
+                        alt=""></button>
+
             </div>
         </div>
     </section>
@@ -270,45 +288,45 @@
         <div class="container">
             <h2 class="title direction__title">Популярные <span class="title_yellow">направления</span></h2>
             <ul class="direction__cards">
-                <li class="direction__card" style="background-image: url(img/city.jpg);">
-                    <div class="direction__text">
-                        <h3 class="title direction__card-title title_size_16">Алушта</h3>
-                        <p class="direction__price">от 769 ₽ </p>
+                <li class="city-card" style="background-image: url(img/city.jpg);">
+                    <div class="city-card__text">
+                        <h3 class="title city-card__title title_size_16">Алушта</h3>
+                        <p class="city-card__price">от 769 ₽ </p>
                     </div>
                     <button class="btn btn_small">Выбрать</button>
                 </li>
-                <li class="direction__card" style="background-image: url(img/city.jpg);">
-                    <div class="direction__text">
-                        <h3 class="title direction__card-title title_size_16">Алушта</h3>
-                        <p class="direction__price">от 769 ₽ </p>
+                <li class="city-card" style="background-image: url(img/city.jpg);">
+                    <div class="city-card__text">
+                        <h3 class="title city-card__title title_size_16">Алушта</h3>
+                        <p class="city-card__price">от 769 ₽ </p>
                     </div>
                     <button class="btn btn_small">Выбрать</button>
                 </li>
-                <li class="direction__card" style="background-image: url(img/city.jpg);">
-                    <div class="direction__text">
-                        <h3 class="title direction__card-title title_size_16">Алушта</h3>
-                        <p class="direction__price">от 769 ₽ </p>
+                <li class="city-card" style="background-image: url(img/city.jpg);">
+                    <div class="city-card__text">
+                        <h3 class="title city-card__title title_size_16">Алушта</h3>
+                        <p class="city-card__price">от 769 ₽ </p>
                     </div>
                     <button class="btn btn_small">Выбрать</button>
                 </li>
-                <li class="direction__card" style="background-image: url(img/city.jpg);">
-                    <div class="direction__text">
-                        <h3 class="title direction__card-title title_size_16">Алушта</h3>
-                        <p class="direction__price">от 769 ₽ </p>
+                <li class="city-card" style="background-image: url(img/city.jpg);">
+                    <div class="city-card__text">
+                        <h3 class="title city-card__title title_size_16">Алушта</h3>
+                        <p class="city-card__price">от 769 ₽ </p>
                     </div>
                     <button class="btn btn_small">Выбрать</button>
                 </li>
-                <li class="direction__card" style="background-image: url(img/city.jpg);">
-                    <div class="direction__text">
-                        <h3 class="title direction__card-title title_size_16">Алушта</h3>
-                        <p class="direction__price">от 769 ₽ </p>
+                <li class="city-card" style="background-image: url(img/city.jpg);">
+                    <div class="city-card__text">
+                        <h3 class="title city-card__title title_size_16">Алушта</h3>
+                        <p class="city-card__price">от 769 ₽ </p>
                     </div>
                     <button class="btn btn_small">Выбрать</button>
                 </li>
-                <li class="direction__card" style="background-image: url(img/city.jpg);">
-                    <div class="direction__text">
-                        <h3 class="title direction__card-title title_size_16">Алушта</h3>
-                        <p class="direction__price">от 769 ₽ </p>
+                <li class="city-card" style="background-image: url(img/city.jpg);">
+                    <div class="city-card__text">
+                        <h3 class="title city-card__title title_size_16">Алушта</h3>
+                        <p class="city-card__price">от 769 ₽ </p>
                     </div>
                     <button class="btn btn_small">Выбрать</button>
                 </li>
@@ -319,51 +337,72 @@
                 <div class="swiper-wrapper mobile-slider__wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <div class="direction__card" style="background-image: url(img/city.jpg);">
-                            <div class="direction__text">
-                                <h3 class="title direction__card-title title_size_16">Алушта</h3>
-                                <p class="direction__price">от 769 ₽ </p>
+                        <div class="city-card" style="background-image: url(img/city.jpg);">
+                            <div class="city-card__text">
+                                <h3 class="title city-card__title title_size_16">Алушта</h3>
+                                <p class="city-card__price">от 769 ₽ </p>
                             </div>
                             <button class="btn btn_small">Выбрать</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="direction__card" style="background-image: url(img/city.jpg);">
-                            <div class="direction__text">
-                                <h3 class="title direction__card-title title_size_16">Алушта</h3>
-                                <p class="direction__price">от 769 ₽ </p>
+                        <div class="city-card" style="background-image: url(img/city.jpg);">
+                            <div class="city-card__text">
+                                <h3 class="title city-card__title title_size_16">Алушта</h3>
+                                <p class="city-card__price">от 769 ₽ </p>
                             </div>
                             <button class="btn btn_small">Выбрать</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="direction__card" style="background-image: url(img/city.jpg);">
-                            <div class="direction__text">
-                                <h3 class="title direction__card-title title_size_16">Алушта</h3>
-                                <p class="direction__price">от 769 ₽ </p>
+                        <div class="city-card" style="background-image: url(img/city.jpg);">
+                            <div class="city-card__text">
+                                <h3 class="title city-card__title title_size_16">Алушта</h3>
+                                <p class="city-card__price">от 769 ₽ </p>
                             </div>
                             <button class="btn btn_small">Выбрать</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="direction__card" style="background-image: url(img/city.jpg);">
-                            <div class="direction__text">
-                                <h3 class="title direction__card-title title_size_16">Алушта</h3>
-                                <p class="direction__price">от 769 ₽ </p>
+                        <div class="city-card" style="background-image: url(img/city.jpg);">
+                            <div class="city-card__text">
+                                <h3 class="title city-card__title title_size_16">Алушта</h3>
+                                <p class="city-card__price">от 769 ₽ </p>
                             </div>
                             <button class="btn btn_small">Выбрать</button>
                         </div>
                     </div>
-                    ...
+                    <div class="swiper-slide">
+                        <div class="city-card" style="background-image: url(img/city.jpg);">
+                            <div class="city-card__text">
+                                <h3 class="title city-card__title title_size_16">Алушта</h3>
+                                <p class="city-card__price">от 769 ₽ </p>
+                            </div>
+                            <button class="btn btn_small">Выбрать</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="city-card" style="background-image: url(img/city.jpg);">
+                            <div class="city-card__text">
+                                <h3 class="title city-card__title title_size_16">Алушта</h3>
+                                <p class="city-card__price">от 769 ₽ </p>
+                            </div>
+                            <button class="btn btn_small">Выбрать</button>
+                        </div>
+                    </div>
+
+
                 </div>
                 <!-- If we need pagination -->
                 <div class="slider-pagination"></div>
 
                 <!-- If we need navigation buttons -->
-                
-                <button class="mobile-slider__btn mobile-slider__btn_prev"><img src="icons/btn-prev.svg" alt=""></button>
-                <button class="mobile-slider__btn mobile-slider__btn_next"><img src="icons/btn-next.svg" alt=""></button>
-            
+
+                <button class="mobile-slider__btn mobile-slider__btn_prev"><img src="icons/btn-prev.svg"
+                        alt=""></button>
+                <button class="mobile-slider__btn mobile-slider__btn_next"><img src="icons/btn-next.svg"
+                        alt=""></button>
+
             </div>
             <div class="direction__link-wrap">
                 <a href="#" class="direction__link">Смотреть все <span class="direction__link_blue">тарифы и
@@ -423,61 +462,62 @@
 
             <div class="swiper-container feedback__slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide feedback__slide">
+                    <div class="swiper-slide feedback-item">
 
-                        <div class="feedback__slide-box">
-                            <p class="feedback__slide-text">Импликация, следовательно, контролирует бабувизм, открывая
+                        <div class="feedback-item__box">
+                            <p class="feedback-item__text">Импликация, следовательно, контролирует бабувизм, открывая
                                 новые горизонты. Надстройка нетривиальна. Апостериори, гравитационный парадокс
                                 амбивалентно понимает под собой интеллигибельный знак. Дискретность амбивалентно
                                 транспонирует гравитационный парадокс. Отсюда естественно следует, что автоматизация
                                 диск</p>
                         </div>
-                        <div class="feedback__slide-user">
-                            <div class="feedback__slide-avatar">
+                        <div class="feedback-item__user">
+                            <div class="feedback-item__avatar">
                                 <img src="img/avatar-1.jpg" alt="">
                             </div>
-                            <p class="feedback__slide-name">Анна</p>
+                            <p class="feedback-item__name">Анна</p>
                         </div>
 
                     </div>
-                    <div class="swiper-slide feedback__slide">
+                    <div class="swiper-slide feedback-item">
 
-                        <div class="feedback__slide-box">
-                            <p class="feedback__slide-text">Смысл жизни, следовательно, творит данный закон внешнего
+                        <div class="feedback-item__box">
+                            <p class="feedback-item__text">Смысл жизни, следовательно, творит данный закон внешнего
                                 мира. Отсюда естественно следует, что автоматизация дискредитирует предмет деятельности.
                                 Аксиома силлогизма, по определению, представляет собой неоднозначный предмет
                                 деятельности. Надстройка нетривиальна.
                                 Сомнение рефлектирует естественный закон исключённого третьего..</p>
                         </div>
-                        <div class="feedback__slide-user">
-                            <div class="feedback__slide-avatar">
+                        <div class="feedback-item__user">
+                            <div class="feedback-item__avatar">
                                 <img src="img/avatar-2.jpg" alt="">
                             </div>
-                            <p class="feedback__slide-name">Виктор</p>
+                            <p class="feedback-item__name">Виктор</p>
                         </div>
                     </div>
-                    <div class="swiper-slide feedback__slide">
+                    <div class="swiper-slide feedback-item">
 
-                        <div class="feedback__slide-box">
-                            <p class="feedback__slide-text">Импликация, следовательно, контролирует бабувизм, открывая
+                        <div class="feedback-item__box">
+                            <p class="feedback-item__text">Импликация, следовательно, контролирует бабувизм, открывая
                                 новые горизонты. Надстройка нетривиальна. Апостериори, гравитационный парадокс
                                 амбивалентно понимает под собой интеллигибельный знак. Дискретность амбивалентно
                                 транспонирует гравитационный парадокс. Отсюда естественно следует, что автоматизация
                                 диск</p>
                         </div>
-                        <div class="feedback__slide-user">
-                            <div class="feedback__slide-avatar">
+                        <div class="feedback-item__user">
+                            <div class="feedback-item__avatar">
                                 <img src="img/avatar-1.jpg" alt="">
                             </div>
-                            <p class="feedback__slide-name">Анна</p>
+                            <p class="feedback-item__name">Анна</p>
                         </div>
                     </div>
-                    ...
                 </div>
 
                 <div class="slider-pagination"></div>
-                <button class="mobile-slider__btn mobile-slider__btn_prev"><img src="icons/btn-prev.svg" alt=""></button>
-                <button class="mobile-slider__btn mobile-slider__btn_next"><img src="icons/btn-next.svg" alt=""></button>
+                <button class="mobile-slider__btn mobile-slider__btn_prev"><img src="icons/btn-prev.svg"
+                        alt=""></button>
+                <button class="mobile-slider__btn mobile-slider__btn_next"><img src="icons/btn-next.svg"
+                        alt=""></button>
 
             </div>
         </div>

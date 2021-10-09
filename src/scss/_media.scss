@@ -26,6 +26,7 @@
             width: 100%;
             order: 3;
         }
+
         &__list {
             justify-content: center;
         }
@@ -47,7 +48,7 @@
         }
     }
 
-    .transfer__box {
+    .order-box {
         max-width: 540px;
     }
 
@@ -61,6 +62,7 @@
 
         &__car-data {
             flex-basis: 260px;
+
             .btn {
                 width: 100%;
             }
@@ -253,8 +255,10 @@
         text-align: center;
     }
 
-    .feedback__slide-box {
-        max-width: none;
+    .feedback-item {
+        &__box {
+            max-width: none;
+        }
     }
 
     .questions__title {
@@ -306,7 +310,7 @@
             padding: 0 22px;
         }
     }
-    
+
     .header {
         top: 24px;
 
@@ -331,13 +335,15 @@
                 right: 0;
             }
 
-            
+
         }
+
         &__list {
             height: 100%;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
             &-item {
                 margin-right: 0;
                 margin-bottom: 20px;
@@ -354,10 +360,10 @@
         }
     }
 
-    
+
 
     .transfer {
-        padding: 160px 0 25px;
+        padding: 160px 0 0;
 
         &__items {
             flex-direction: column;
@@ -378,25 +384,30 @@
             }
         }
 
-        &__box {
-            padding: 38px 32px 48px;
-        }
 
-        &__box-text {
+    }
+
+    .order-box {
+        max-width: none;
+        width: 100%;
+        border-radius: 0;
+        padding: 38px 32px 48px;
+
+
+        &__text {
             flex-direction: column;
             align-items: stretch;
         }
 
-        &__box-title {
+        &__title {
             margin-right: 0;
             margin-bottom: 15px;
         }
     }
 
     .form {
-        &__car-data {
-            
-        }
+        &__car-data {}
+
         &__item_large {
             width: 100%;
             margin-right: 0;
@@ -417,7 +428,7 @@
     }
 
     .reasons {
-        padding: 25px 0 11px;
+        padding: 50px 0 11px;
 
         &__title {
             font-size: 23px;
@@ -540,12 +551,16 @@
             line-height: 15px;
         }
 
-        &__slide-text {
+       
+    }
+
+    .feedback-item {
+        &__text {
             font-size: 14px;
-            line-height: 17px;
+            line-height: 20px;
         }
 
-        &__slide-box {
+        &__box {
             padding: 34px 22px;
         }
     }

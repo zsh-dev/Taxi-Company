@@ -12,33 +12,7 @@
         grid-gap: 30px;
         margin-bottom: 40px;
     }
-    &__card {
-        position: relative;
-        padding: 20px;
-        background: center center/cover no-repeat;
-        border-radius: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        transition:  box-shadow .5s ease-in-out;
-        &:hover {
-            box-shadow: -2px 7px 26px 18px rgba(34, 39, 80, 0.2);
-        }
-        &-title {
-            max-width: 150px;
-        } 
-    
-    }
-    &__text {
-        max-width: 155px;
-    }
-    &__price {
-        margin-top: 5px;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 17px;
-        color: #FEDA1F;
-    }
+   
    &__link-wrap {
        text-align: center;
    }
@@ -66,7 +40,7 @@
 }
 .mobile-slider {
     display: none;
-    .direction__card {
+    .city-card {
         min-height: 260px;
     }
 }
