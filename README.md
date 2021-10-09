@@ -1,1 +1,1 @@
-https://zsh-dev.github.io/taxi-in-the-crimea/dist - ссылка на сайт
+https://zsh-dev.github.io/Taxi-Company/dist - ссылка на сайт
